@@ -1,12 +1,13 @@
 import express from "express";
+
 const app = express();
 const port = process.env.PORT ?? "9001";
 
 app.get("/", (req, res) => {
+  console.log(`Connection at ${new Date().toISOString()}`);
   res.send("Hello World! This is a test server.");
-  console.log("Response sent");
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`Node server listening on port ${port}`);
 });
