@@ -6,7 +6,7 @@ import vitest from "@vitest/eslint-plugin";
 
 export default defineConfig(
   {
-    ignores: ["**/*.js"],
+    ignores: ["**/*.js", "**/dist/**", "**/node_modules/**", "src/client/**"],
   },
   eslint.configs.recommended,
   tseslint.configs.strictTypeChecked,

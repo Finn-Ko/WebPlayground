@@ -3,6 +3,8 @@
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "ms-vscode.vscode-typescript-next",
-    "vue.volar"
+    "vue.volar",
+    "vitest.explorer",
+    "EditorConfig.EditorConfig"
   ]
 }

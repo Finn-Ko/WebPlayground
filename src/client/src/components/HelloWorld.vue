@@ -1,23 +1,24 @@
 <template>
   <div>
+    This is a test
     <h1>{{ message }}</h1>
   </div>
 </template>
 
-<script language="ts" setup>
-import axios from "axios";
-import { onMounted, ref } from "vue";
+<script lang="ts" setup>
+import axios from 'axios'
+import { onMounted, ref } from 'vue'
 
-const message = ref("");
+const message = ref('')
 
 onMounted(async () => {
   try {
-    const response = await axios.get(`http://localhost:3000/api/message`);
-    message.value = response.data.message;
+    const response = await axios.get(`http://localhost:3000/api/message`)
+    message.value = response.data.message
   } catch (error) {
-    console.error("Error fetching message:", error);
+    console.error('Error fetching message:', error)
   }
-});
+})
 </script>
 
 <style scoped>

@@ -14,16 +14,16 @@ app.use(cors());
 app.use(express.json());
 
 // Serve static files from the Vue app
-app.use(express.static(path.join(__dirname, "..", "dist", "client")));
+app.use(express.static(path.join(__dirname, "../..", "dist", "client")));
 
 // Redirect all requests to the index.html
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "..", "dist", "client", "index.html"));
+  res.sendFile(path.join(__dirname, "../..", "dist", "client", "index.html"));
 });
 
 // Api routes
 app.get("/api/message", (req, res) => {
-  res.json({ message: "Hello from the server!" });
+  res.json({ message: "Hello from the server! And from me too :)" });
 });
 
 // Start server
