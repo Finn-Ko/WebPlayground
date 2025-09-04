@@ -19,7 +19,9 @@ This can be done by running
 npm install && cd src/client && npm install
 ```
 
-It is highly encouraged to use [Visual Studio Code](https://code.visualstudio.com/) as an IDE, and installing all the recommended extensions defined in the [`extensions.json`](https://github.com/Finn-Ko/WebPlayground/blob/main/.vscode/extensions.json), for the best development tooling experience (these will be suggested to you automatically).
+It is highly encouraged to use [Visual Studio Code](https://code.visualstudio.com/) as an IDE, and to install all the recommended extensions defined in the [`extensions.json`](https://github.com/Finn-Ko/WebPlayground/blob/main/.vscode/extensions.json), for the best development tooling experience (the extensions will be suggested to you automatically).
+
+**Alternatively** if you prefer and know what you are doing, you can also build the docker image and run it.
 
 ## Scripts
 
