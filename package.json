@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Repo to play around and show of personal web projects based on Node.js",
   "scripts": {
-    "dev": "tsx --watch --env-file .env src/server/index.ts & cd src/client && vite build --watch",
+    "dev": "tsx --watch --env-file .env src/server/index.ts & cd src/client && vite build --watch && kill $!",
     "start": "node --env-file .env dist/server/index.js",
     "build": "tsc -p tsconfig.build.json && cd src/client && vite build",
     "build:server": "tsc -p tsconfig.build.json",
